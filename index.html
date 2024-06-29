@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forma_МедВед</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body style="background-color: rgb(230, 168, 221)">
+    
+    <div class="container_with_content">
+      <h1>Форма для заполнения</h1>
+      <form id="dataForm" class="formJS">
+        <div class="Phather_div">
+          <label for="first_Name">Имя</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            class="formInput"
+            placeholder="Имя"
+          />
+        </div>
+        <div class="Phather_div">
+          <label for="last_Name">Фамилия</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            class="formInput"
+            placeholder="Фамилия"
+          />
+        </div>
+        <div class="Phather_div">
+          <label for="patronymic">Отчество</label>
+          <input
+            type="text"
+            id="middleName"
+            name="middleName"
+            class="formInput"
+            placeholder="Отчество"
+          />
+        </div>
+        <div class="Phather_div">
+          <label for="phone_Number">Номер телефона</label>
+          <input
+            data-max-length="12"
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            class="formInput"
+            placeholder="Номер телефона"
+          />
+        </div>
+        <div class="Phather_div">
+          <label for="date">Дата рождения</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            class="formInput"
+            placeholder="Дата рождения"
+          />
+        </div>
+        <div class="Phather_div">
+          <label for="time">Дата записи</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            class="formInput"
+            placeholder="Дата записи"
+          />
+        </div>
+        <div class="Phather_div">
+          <label for="time">Время записи</label>
+          <input
+            type="time"
+            id="date"
+            name="date"
+            class="formInput"
+            placeholder="Время"
+          />
+        </div>
+        
+        
+       
+        <button class="btn" type="submit">
+          <span class="btnText">Отправить</span>
+        </button>
+      </form>
+    </div>
+  
+    <script defer src="./app.js"></script>
+  </body>
+</html>
